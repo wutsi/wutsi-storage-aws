@@ -20,14 +20,14 @@ open class S3StorageService(
     override fun contains(url: URL) = url.toString().startsWith(urlPrefix())
 
     @Throws(IOException::class)
-    override fun store(path: String, content: InputStream, contentType: String?, ttlSeconds: Int?): URL {
+    override fun store(path: String, content: InputStream, contentType: String?, ttlSeconds: Int?, contentEncoding: String?): URL {
         val meta = ObjectMetadata()
-        if (contentType != null) {
+        if (contentType != null)
             meta.contentType = contentType
-        }
-        if (ttlSeconds != null) {
-            meta.cacheControl = "max-age=31536000, must-revalidate"
-        }
+        if (ttlSeconds != null)
+            meta.cacheControl = "max-age=$ttlSeconds, must-revalidate"
+        if (contentEncoding != null)
+            meta.contentEncoding = contentEncoding
 
         val request = PutObjectRequest(bucket, path, content, meta)
         try {
