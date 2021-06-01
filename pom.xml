@@ -4,7 +4,7 @@
 
   <artifactId>wutsi-storage-aws</artifactId>
   <groupId>com.wutsi.storage</groupId>
-  <version>1.1.2</version>
+  <version>1.1.3-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>wutsi-storage-aws</name>
@@ -33,7 +33,7 @@
 
   <scm>
     <developerConnection>scm:git:https://github.com/wutsi/wutsi-storage-aws.git</developerConnection>
-    <tag>wutsi-storage-aws-1.1.2</tag>
+    <tag>HEAD</tag>
   </scm>
   <distributionManagement>
     <repository>
