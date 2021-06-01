@@ -17,7 +17,7 @@
     <aws.version>1.11.750</aws.version>
     <junit.version>5.6.0</junit.version>
     <klint.version>0.40.0</klint.version>
-    <kotlin.version>1.4.31</kotlin.version>
+    <kotlin.version>1.5.10</kotlin.version>
     <kotlin-ktlint.version>0.38.1</kotlin-ktlint.version>
     <kotlin-mockito.version>2.2.0</kotlin-mockito.version>
     <javax.servlet.version>3.1.0</javax.servlet.version>
