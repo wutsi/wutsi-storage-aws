@@ -15,7 +15,7 @@
     <jacoco.threshold.class>0.95</jacoco.threshold.class>
 
     <aws.version>1.11.750</aws.version>
-    <junit.version>5.6.0</junit.version>
+    <junit.version>5.7.2</junit.version>
     <klint.version>0.40.0</klint.version>
     <kotlin.version>1.4.31</kotlin.version>
     <kotlin-ktlint.version>0.38.1</kotlin-ktlint.version>
